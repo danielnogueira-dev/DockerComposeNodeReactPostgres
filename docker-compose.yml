@@ -1,0 +1,16 @@
+version: "3.7"
+services:
+  node:
+    container_name: node
+    build:
+      context: ./node
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - D:/DockerComposeNodePostgres/app:/var/www/html/app
+    networks:
+      - frontend
+
+networks:
+  frontend:
