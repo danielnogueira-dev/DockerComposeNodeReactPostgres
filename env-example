@@ -1,0 +1,15 @@
+#----------------------#
+# SETTING UP VARIABLES #
+#----------------------#
+
+#-------#
+# LOCAL #
+#-------#
+LOCAL_PATH_APP=./app
+LOCAL_NODE_PORT=3000
+
+#------#
+# NODE #
+#------#
+NODE_PATH_APP=/var/www/html/app
+NODE_CONTAINER_PORT=3000

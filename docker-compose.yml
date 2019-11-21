@@ -6,11 +6,10 @@ services:
       context: ./node
       dockerfile: Dockerfile
     ports:
-      - "3000:3000"
+      - "${LOCAL_NODE_PORT}:${NODE_CONTAINER_PORT}"
     volumes:
-      - D:/DockerComposeNodePostgres/app:/var/www/html/app
+      - ${LOCAL_PATH_APP}:${NODE_PATH_APP}
     networks:
       - frontend
-
 networks:
   frontend:
